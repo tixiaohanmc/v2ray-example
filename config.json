@@ -1,0 +1,29 @@
+{
+    "inbounds": [
+        {
+            "listen": "0.0.0.0",
+            "port": 1234,
+            "protocol": "vmess",
+            "settings": {
+                "clients": [
+                    {
+                        "id": "685d7180-9309-4dc7-a80f-3d83f3b80892"
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "tcp"
+            }
+        }
+    ],
+    "outbounds": [
+        {
+            "protocol": "freedom",
+            "tag": "direct"
+        },
+        {
+            "protocol": "blackhole",
+            "tag": "block"
+        }
+    ]
+}
